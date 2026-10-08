@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    text-align: center;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 40px;
+
+    background-color: #0f172a;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #3b82f6;
+}
+
+.hero {
+    min-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background-color: #0f172a;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 0 0 10px;
+    color: #3b82f6;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+
+    background-color: #3b82f6;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: #2563eb;
+}
+
+.projetos {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.projetos h2,
+.servicos h2,
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.cartoes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cartao {
+    flex: 1;
+
+    padding: 35px 25px;
+
+    background-color: #f8fafc;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cartao h3 {
+    font-size: 23px;
+}
+
+.cartao p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.cartao a {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 12px 22px;
+
+    background-color: #2563eb;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+}
+
+.cartao a:hover {
+    background-color: #1d4ed8;
+}
+
+.servicos {
+    padding: 80px 20px;
+    background-color: #e2e8f0;
+}
+
+.lista-servicos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.servico {
+    padding: 20px 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+.preco {
+    margin-top: 30px;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #16a34a;
+}
+
+.contacto {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.contacto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 30px 20px;
+
+    background-color: #0f172a;
+    color: white;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartao {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .projetos h2,
+    .servicos h2,
+    .contacto h2 {
+        font-size: 30px;
+    }
+}
